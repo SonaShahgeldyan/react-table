@@ -23,17 +23,15 @@ const CustomTable = (props) => {
       return 0;
     });
     setData(sortedData);
-    console.log("ch", checkedIndexes);
   };
 
   const handleSortingClick = (item) => {
-    console.log("index", item.dataIndex);
     setSortingState({ id: item.dataIndex, dir: isAsc ? "desc" : "asc" });
     sortData(item.dataIndex, isAsc);
   };
 
   const handleCheckboxChange = (event) => {
-    console.log(event.target);
+
     const { name, checked } = event.target;
     setCheckedIndexes({ ...checkedIndexes, [name]: checked });
   };
