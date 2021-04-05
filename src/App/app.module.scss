@@ -1,0 +1,11 @@
+.container {
+  height: 700px;
+  width: 100vw;
+  background-image: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+}
